@@ -81,3 +81,39 @@ class StudentCard extends BusCard {
     super.pay(fare - off);
   }
 }
+
+void main() {
+  // My numbers: D = 98, L = 8
+  // Starting balance = 1980 RWF
+  // Bus fare = 298 RWF
+  // Discount = 18%
+
+  // Create a card and test the setter
+  BusCard card = BusCard('Hamid', 1980);
+  card.owner = 'Al';
+  card.showInfo();
+
+  // TODO 5: change the owner to your full name
+  card.owner = 'Hamid Ahmed Elmahdi Ahmed';
+  card.showInfo();
+
+  // TODO 6: top up 100 RWF and 2000 RWF
+  card.topUp(100);
+  card.topUp(2000);
+
+  // TODO 7: pay your bus fare 2 times
+  card.pay(298);
+  card.pay(298);
+  card.showInfo();
+
+  // TODO 8: create a StudentCard
+  StudentCard student = StudentCard(
+    'Hamid Ahmed Elmahdi Ahmed',
+    1980,
+    18,
+  );
+
+  // TODO 9: pay your bus fare with the student card
+  student.pay(298);
+  student.showInfo();
+}
