@@ -1,11 +1,13 @@
 class busCard {
   String _owner = '';
   int _balance = 0;
+  // Constructor
 
   BusCard(String owner, int balance) {
     _owner = owner;
     _balance = balance;
   }
+  // Getter for owner
 
   String get owner {
     return _owner;
