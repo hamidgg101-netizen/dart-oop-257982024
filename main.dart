@@ -113,7 +113,7 @@ void main() {
     18,
   );
 
-  // TODO 9: pay your bus fare with the student card
+  // TODO 9: pay your bus fare with the student card.
   student.pay(298);
   student.showInfo();
 }
