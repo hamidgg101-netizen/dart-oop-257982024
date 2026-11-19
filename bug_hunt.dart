@@ -8,10 +8,11 @@ class Phone {
     _battery = battery;
   }
 
+  // Getter for battery
   int get battery {
-    return _battery;
+    return-battery;
   }
-}
+
 
 class SmartPhone extends Phone {
   String _system = '';
