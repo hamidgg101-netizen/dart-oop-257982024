@@ -2,7 +2,7 @@ class busCard {
   String _owner = '';
   int _balance = 0;
 
-  BusCard(String ownr, int balance) {
+  BusCard(String owner, int balance) {
     _owner = owner;
     _balance = balance;
   }
