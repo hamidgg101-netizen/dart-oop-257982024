@@ -1,7 +1,8 @@
 class Phone {
-  String _brand;
-  int _battery;
+  String _brand = '';
+  int _battery = 0;
 
+  // Constructor
   Phone(String brand, int battery) {
     _brand = brand;
     _battery = battery;
