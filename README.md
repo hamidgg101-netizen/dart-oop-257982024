@@ -55,7 +55,6 @@ The `/` operator returns a decimal result, while `~/` returns an integer.
 
 The line `p.battery = 100;` is correct after adding the battery setter. It sets the battery value to 100, and the setter checks that the value is between 0 and 100.
 
-## Part 5: Predict the Output
 
 ## Part 5: Predict the Output
 
