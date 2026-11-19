@@ -1,0 +1,32 @@
+class Phone {
+  String _brand;
+  int _battery;
+
+  Phone(String brand, int battery) {
+    _brand = brand;
+    _battery = battery;
+  }
+
+  int get battery {
+    return _battery;
+  }
+}
+
+class SmartPhone extends Phone {
+  String _system = '';
+
+  SmartPhone(String brand, int battery, String system) {
+    _system = system;
+  }
+
+  @override
+  void restart() {
+    print('Restarting $_system');
+  }
+}
+
+void main() {
+  Phone p = new Phone('Tecno', 50);
+  p.battery = 100;
+  print(p.battery());
+}
