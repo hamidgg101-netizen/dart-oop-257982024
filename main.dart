@@ -66,17 +66,18 @@ class StudentCard extends BusCard {
   }
 
 
-  // Override showInfo
- 
-    super.showInfo(),
-    print('studnt card: $_discount% off');
+   // Override showInfo
+  @override
+  void showInfo() {
+    super.showInfo();
+    print('Student card: $_discount% off');
   }
 
   // TODO 4: Override pay
-  @override
-  void pay {
+   @override
+  void pay(int fare) {
     int off = fare * _discount ~/ 100;
     print('Student discount: $off RWF');
     super.pay(fare - off);
   }
-
+}
