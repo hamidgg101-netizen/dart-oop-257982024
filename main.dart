@@ -13,11 +13,13 @@ class busCard {
     return _owner;
   }
 
+   // TODO 1: Getter for balance
   int get balance {
     return _balance;
   }
 
-  set owner(String newname) {
+    // Setter for owner
+  set owner(String newName) {
     if (newName.length < 3) {
       print('Error: name too short');
     } else {
