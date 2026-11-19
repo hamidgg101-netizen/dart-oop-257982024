@@ -41,10 +41,9 @@ class busCard {
     }
   }
 
+ // TODO 3: pay method
   void pay(int fare) {
-    if (fare <= 0) {
-      print('Invalid fare');
-    } else if (fare > _balance) {
+    if (fare > _balance) {
       print('Card declined');
     } else {
       _balance = _balance - fare;
