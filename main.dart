@@ -1,4 +1,4 @@
-class busCard {
+class BusCard {
   String _owner = '';
   int _balance = 0;
   // Constructor
