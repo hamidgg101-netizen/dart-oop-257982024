@@ -10,17 +10,34 @@ class Phone {
 
   // Getter for battery
   int get battery {
-    return-battery;
+    return _battery;
   }
 
 
+// Setter for battery
+  set battery(int value) {
+    if (value >= 0 && value <= 100) {
+      _battery = value;
+    }
+  }
+
+  // Restart method
+  void restart() {
+    print('Restarting phone');
+  }
+}
+
+// SmartPhone class using inheritance
 class SmartPhone extends Phone {
   String _system = '';
 
-  SmartPhone(String brand, int battery, String system) {
+  // Constructor
+  SmartPhone(String brand, int battery, String system)
+      : super(brand, battery) {
     _system = system;
   }
 
+  // Override restart method
   @override
   void restart() {
     print('Restarting $_system');
@@ -28,7 +45,12 @@ class SmartPhone extends Phone {
 }
 
 void main() {
+  // Create a Phone object
   Phone p = new Phone('Tecno', 50);
+
+  // Set battery to 100
   p.battery = 100;
-  print(p.battery());
+
+  // Print battery level
+  print(p.battery);
 }
