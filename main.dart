@@ -26,11 +26,12 @@ class busCard {
       _owner = newName;
     }
   }
-
+ // Method
   void showInfo() {
     print('Owner: $_owner | Balance: $_balance RWF');
   }
 
+  // TODO 2: topUp method
   void topUp(int amount) {
     if (amount >= 500 && amount <= 50000) {
       _balance = _balance + amount;
