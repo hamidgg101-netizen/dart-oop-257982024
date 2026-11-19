@@ -55,14 +55,16 @@ class BusCard {
 }
 
 // Part 2: StudentCard
-class studentCard extends BusCard {
+class StudentCard extends BusCard {
   int _discount = 0;
 
-  // Constructor
-  studentCard(String owner, int balance, int discount)
+
+   // Constructor
+  StudentCard(String owner, int balance, int discount)
       : super(owner, balance) {
     _discount = discount;
   }
+
 
   // Override showInfo
  
