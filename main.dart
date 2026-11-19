@@ -93,7 +93,7 @@ void main() {
   card.owner = 'Al';
   card.showInfo();
 
-  // TODO 5: change the owner to your full name
+  // TODO 5: change the owner to your full name:
   card.owner = 'Hamid Ahmed Elmahdi Ahmed';
   card.showInfo();
 
